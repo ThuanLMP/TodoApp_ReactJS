@@ -1,0 +1,220 @@
+.Create-task {
+  text-align: center;
+}
+.Create-task .input-name,.input-description {
+  margin-bottom: 13px;
+  width: 45%;
+  padding: 14px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: large;
+}
+.Create-task .input-name,.input-description::placeholder{
+  font-weight: bolder;
+}
+.Create-task .input-name{
+  margin-left: 265px;
+}
+i {
+  margin-right: 10px;
+}
+.Create-task .btn{
+  background-color: #f00a0a; /* Green */
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 14px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+.Create-task .btn:hover{
+  background-color: #a52020; 
+}
+.App{
+  position: relative;
+}
+.App-header {
+  text-align: center;
+}
+
+.list{
+  display: block;
+  margin-left: 2%;
+  margin-top: 70px;
+}
+.type-list{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.type-list button{
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid rgb(124, 119, 119);
+  cursor: pointer;
+  font-size: large;
+  font-weight:bolder;
+  color: rgb(121, 116, 116);
+}
+.type-list button:focus{
+  border: none;
+  color: rgb(236, 8, 8);
+  border-bottom: 4px solid rgb(233, 6, 6);
+}
+
+.list-task{
+  text-align: center;
+  border-collapse: collapse;
+  width: 96%;
+  border: 1px solid #ddd;
+ 
+}
+
+
+
+.header-list{
+  background-color: rgb(134, 136, 146);
+  height: 45px;
+}
+.content-list td{
+  font-weight: bold;
+}
+.list-task tr{
+  border: 1px solid #ddd;
+}
+
+.list-task .task-description{
+  text-align: left;
+}
+
+.switch{
+  position: relative;
+  height: 25px;
+  width: 45px;
+  display: inline-block;
+}
+.switch input{
+  display: none;
+}
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: 0.4s;
+}
+.slider:before{
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 2.3px;
+  top: 2.0px;
+  transition: 0.2s;
+}
+input:checked + .slider{
+  background-color: rgb(50, 50, 53);
+}
+input:checked+.slider::before{
+  transform: translate(20px);
+}
+.btn-edit,.btn-delete{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.btn-edit i, .btn-delete i{
+  margin: 0 auto;
+}
+.btn-edit{
+  background-color: rgb(31, 206, 31);
+  margin-right: 3px;
+}
+.btn-delete{
+  background-color: rgb(235, 22, 22);
+  margin-left: 3px;
+}
+.btn-edit:hover{
+  background-color: green;
+}
+.btn-delete:hover{
+  background-color: rgb(167, 10, 10);
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(49,49,49,0.8);
+
+}
+.overlay{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.form-edit{
+  margin-top: 10%;
+}
+.edit-name, .edit-description{
+  margin-bottom: 10px;
+  width: 60%;
+  padding: 14px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: large;
+}
+
+.edit-description ::placeholder{
+  font-weight: bolder;
+}
+.edit-name::placeholder{
+  font-weight:bolder;
+}
+.btn-close{
+  position: absolute;
+  right: 0px;
+  top:0px;
+  width: 33px;
+  height: 27px;
+  background-color: #f00a0a;
+  cursor: pointer;
+  font-size: medium;
+  border: none;
+}
+.btn-save{
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  color: #ddd;
+  border-radius: 3px;
+  font-weight: bolder;
+  font-size: large;
+  cursor: pointer;
+}
